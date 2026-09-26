@@ -1,29 +1,75 @@
-# تطبيق الملاحظات (Notes App)
+Notes App
 
-تطبيق أندرويد مبني بلغة Kotlin يتيح للمستخدم إدارة الملاحظات (عرض، إضافة، تعديل، حذف)
-من خلال الاتصال بخادم خارجي باستخدام REST API.
+<div align="center"><img src="https://img.shields.io/badge/Kotlin-Android-purple?style=for-the-badge&logo=kotlin" />
+<img src="https://img.shields.io/badge/Retrofit-REST%20API-009688?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Architecture-MVVM-blue?style=for-the-badge" /></div><div dir="rtl" align="right">نبذة عن التطبيق
 
-يركز المشروع على فهم التعامل مع الشبكة وتنفيذ عمليات CRUD باستخدام Retrofit
-مع تنظيم الكود وفق معمارية MVVM.
+تطبيق Android لإدارة الملاحظات باستخدام Kotlin وREST API.
 
-## الميزات
-- جلب جميع الملاحظات (GET)
-- إضافة ملاحظة جديدة (POST)
-- تعديل ملاحظة موجودة (PUT)
-- حذف ملاحظة (DELETE)
-- تحديث البيانات بعد كل عملية
+يتيح التطبيق للمستخدم عرض الملاحظات وإضافة ملاحظات جديدة وتعديلها وحذفها من خلال الاتصال بخادم خارجي.
+
+يركز المشروع على التعامل مع الشبكة وتنفيذ عمليات CRUD باستخدام Retrofit مع تنظيم الكود وفق معمارية MVVM.
+
+الميزات
+
+- جلب جميع الملاحظات باستخدام GET
+- إضافة ملاحظة جديدة باستخدام POST
+- تعديل ملاحظة موجودة باستخدام PUT
+- حذف ملاحظة باستخدام DELETE
+- تحديث البيانات بعد كل عملية ناجحة
 - التعامل مع الأخطاء باستخدام Result
+- عرض الملاحظات باستخدام RecyclerView
 - استخدام معمارية MVVM
 
-## التقنيات المستخدمة
-- Kotlin
-- Retrofit
-- Coroutines
-- MVVM Architecture
-- RecyclerView
+</div><div dir="ltr" align="left">Tech Stack
 
-## طريقة الاستخدام
-1. عند فتح التطبيق يتم جلب الملاحظات من الخادم
-2. يمكن إضافة ملاحظة جديدة
-3. يمكن تعديل أو حذف أي ملاحظة
-4. يتم تحديث البيانات تلقائيًا بعد كل عملية ناجحة
+Technology| Usage
+Kotlin| Primary programming language
+Retrofit| REST API requests
+Kotlin Coroutines| Asynchronous operations
+MVVM| Application architecture
+RecyclerView| Notes list
+Result| Error and operation result handling
+
+</div><div dir="rtl" align="right">طريقة الاستخدام
+
+1. عند فتح التطبيق يتم جلب الملاحظات من الخادم.
+2. يمكن إضافة ملاحظة جديدة.
+3. يمكن تعديل الملاحظات الموجودة.
+4. يمكن حذف أي ملاحظة.
+5. يتم تحديث قائمة الملاحظات بعد كل عملية ناجحة.
+
+</div><div dir="ltr" align="left">Architecture
+
+The application follows the MVVM architecture pattern.
+
+Retrofit is used to communicate with the REST API, while Coroutines are used to handle asynchronous network operations.
+
+The application supports CRUD operations for managing notes.
+
+</div><div dir="ltr" align="left">Getting Started
+
+Requirements
+
+- Android Studio
+- Android SDK
+- Kotlin
+
+Setup
+
+1. Clone the repository.
+2. Open the project in Android Studio.
+3. Sync the project with Gradle.
+4. Build and run the application.
+
+</div><div dir="ltr" align="left">Project Status
+
+Completed personal Android project.
+
+</div><div dir="ltr" align="left">Author
+
+Ahmed Ali Aldhmshi
+
+GitHub: "ahmedaldhmshidev-art" (https://github.com/ahmedaldhmshidev-art)
+
+</div>
